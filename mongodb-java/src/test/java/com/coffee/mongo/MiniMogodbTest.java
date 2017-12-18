@@ -13,6 +13,9 @@ public class MiniMogodbTest {
 	private static final String uuid  = "068523e5-bc85-4c08-85a7-dc7a84735f7b";
 	private static final String database_name  = "src/test/resource/mini-mongodb.xml";
 	
+	/**
+	 * 查询表数据
+	 */
 	@Test
 	public void testLoadTableDatas() {
 		try {
@@ -24,6 +27,9 @@ public class MiniMogodbTest {
 		}
 	}
 	
+	/**
+	 * 删除表数据
+	 */
 	@Test
 	public void testDeleteData() {
 		Person po = new Person();
@@ -36,6 +42,9 @@ public class MiniMogodbTest {
 		}
 	}
 	
+	/**
+	 * 在更新表数据
+	 */
 	@Test
 	public void testUpdateData() {
 		Person po = new Person();
@@ -50,6 +59,9 @@ public class MiniMogodbTest {
 		}
 	}
 	
+	/**
+	 * 在test表中添加数据
+	 */
 	@Test
 	public void testAddData() {
 		Person po = new Person();
@@ -65,6 +77,9 @@ public class MiniMogodbTest {
 		}
 	}
 	
+	/**
+	 * 初始化创建数据库
+	 */
 	@Test
 	public void testCreateDataBase() {
 		try {
